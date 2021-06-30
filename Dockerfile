@@ -5,4 +5,4 @@ RUN apt update
 RUN apt install -y inotify-tools
 RUN yes | mix archive.install hex phx_new 1.4.17
 COPY phx.sh /
-RUN  chmod u+x /phx.sh
+RUN chmod u+x /phx.sh
