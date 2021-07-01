@@ -24,3 +24,33 @@ sudo chmod 666 /dev/ttyUSB0
 /dev/ttyACM0は非対応です。外部でシリアルポートを用意してください。
 
 ■マイコンのファームについて
+
+ymn_link_firmwareの中にある
+
+ymn_link_firmware.inoをArduinoにビルドし書き込んでください。
+
+■NeosVRのノードについて
+
+JP Public/YMN Public/ymn_link
+
+に置いてあります。
+
+YMNLinkノード
+
+◇IN
+
+実行パルス
+
+IPアドレス or ホスト名
+
+コマンド 
+
+　　0 ：デジタルポートOFF, 1  :デジタルポートON,  a :アナログポートから値取得  
+
+ポート番号
+　
+ 　　デジタルポートは2～13　アナログポートは0～5
+
+◇Out
+
+結果
