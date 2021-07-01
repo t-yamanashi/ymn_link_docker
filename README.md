@@ -5,52 +5,52 @@ NeosVR⇔マイコンを接続するライブラリ
 
 ■使い方
 
-git clone https://github.com/t-yamanashi/ymn_link_docker
+  git clone https://github.com/t-yamanashi/ymn_link_docker
 
-cd ymn_link_docker
+  cd ymn_link_docker
 
-sh install.sh
+  sh install.sh
 
-sh run.sh
+  sh run.sh
 
 ■シリアルポートについて
 
-シリアルポート　/dev/ttyUSB0は
+  シリアルポート　/dev/ttyUSB0は
 
-sudo chmod 666 /dev/ttyUSB0
+  sudo chmod 666 /dev/ttyUSB0
 
-権限を与えてください。
+  権限を与えてください。
 
-/dev/ttyACM0は非対応です。外部でシリアルポートを用意してください。
+  /dev/ttyACM0は非対応です。外部でシリアルポートを用意してください。
 
 ■マイコンのファームについて
 
-ymn_link_firmwareの中にある
+  ymn_link_firmwareの中にある
 
-ymn_link_firmware.inoをArduinoにビルドし書き込んでください。
+  ymn_link_firmware.inoをArduinoにビルドし書き込んでください。
 
 ■NeosVRのノードについて
 
-JP Public/YMN Public/ymn_link
+  JP Public/YMN Public/ymn_link
 
-に置いてあります。
+  に置いてあります。
 
-YMNLinkノード
+■YMNLinkノード使い方
 
-◇IN
+　◇IN
 
-実行パルス
+　　実行パルス
 
-IPアドレス or ホスト名
+　　IPアドレス or ホスト名
 
-コマンド 
+　　コマンド 
 
-　　0 ：デジタルポートOFF, 1  :デジタルポートON,  a :アナログポートから値取得  
+　　　　0 ：デジタルポートOFF, 1  :デジタルポートON,  a :アナログポートから値取得  
 
-ポート番号
+　　ポート番号
 　
- 　　デジタルポートは2～13　アナログポートは0～5
+ 　　　デジタルポートは2～13　アナログポートは0～5
 
-◇Out
+　◇OUT
 
-結果
+　　結果
